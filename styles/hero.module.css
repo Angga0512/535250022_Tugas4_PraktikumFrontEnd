@@ -1,0 +1,89 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0 4.5rem;
+}
+
+.glow {
+  position: absolute;
+  inset: auto 0 -30% 55%;
+  width: 60vw;
+  height: 60vw;
+  max-width: 620px;
+  max-height: 620px;
+  background: radial-gradient(circle, rgba(226, 183, 92, 0.22), transparent 65%);
+  filter: blur(24px);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  color: var(--nk-gold);
+  font-family: var(--font-display), serif;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.title {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  line-height: 1.12;
+  margin: 0.6rem 0 1rem;
+}
+
+.title span {
+  color: var(--nk-gold);
+}
+
+.lead {
+  color: var(--nk-muted);
+  max-width: 34rem;
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
+}
+
+.panel {
+  padding: 1.5rem;
+  border: 1px solid rgba(226, 183, 92, 0.2);
+  border-radius: 14px;
+  background: var(--nk-surface);
+}
+
+.panelTitle {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--nk-gold);
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  gap: 0.85rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed rgba(226, 183, 92, 0.16);
+  color: var(--nk-muted);
+  font-size: 0.92rem;
+}
+
+.list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.list span {
+  color: var(--nk-gold);
+  font-family: var(--font-display), serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
