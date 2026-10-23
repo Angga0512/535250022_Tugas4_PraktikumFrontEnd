@@ -1,0 +1,33 @@
+.card {
+  height: 100%;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.card:hover {
+  border-color: var(--nk-gold);
+  transform: translateY(-4px);
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: var(--nk-surface-2);
+  border: 1px solid rgba(226, 183, 92, 0.25);
+  font-size: 2rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.role {
+  color: var(--nk-gold);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
